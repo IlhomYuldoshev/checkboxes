@@ -1,0 +1,68 @@
+.container {
+  max-width: 1000px;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visuallyhidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.checkbox:focus ~ .checkbox-control {
+  box-shadow: 0 0 0 3px rgb(42, 191, 236);
+}
+
+.checkbox-control {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 16px;
+  border: 1px solid #222;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.checkbox-pingpong:checked ~ .checkbox-control {
+  background-image: url(./tennis.svg);
+}
+
+.checkbox-basketball:checked ~ .checkbox-control {
+  background-image: url(./tennis.svg);
+}
+.checkbox-volleyball:checked ~ .checkbox-control {
+  background-image: url(./tennis.svg);
+}
+.checkbox-hockey:checked ~ .checkbox-control {
+  background-image: url(./tennis.svg);
+}
+
+.checkbox:disabled ~ checkbox-control,
+.checkbox:disabled ~ span {
+  opacity: 0.5;
+}

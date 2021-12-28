@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom checkboxes</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset>
+          <legend>Qaysi sport turiga qiziqasiz?</legend>
+          <div class="form-inner">
+            <label class="checkbox-label">
+              <input type="checkbox" class="visuallyhidden checkbox checkbox-pingpong" name="ping_pong"/>
+              <span class="checkbox-control"></span>
+              <span>Stol tennisi</span>
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" class="visuallyhidden checkbox checkbox-basketball" name="basketball"/>
+              <span class="checkbox-control"></span>
+              <span>Basketbol</span>
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" class="visuallyhidden checkbox checkbox-volleyball" name="volleyball"/>
+              <span class="checkbox-control"></span>
+              <span>Volleybol</span>
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" class="visuallyhidden checkbox checkbox-hockey" name="ice_hockey" disabled />
+              <span class="checkbox-control"></span>
+              <span>Hokkey</span>
+            </label>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
